@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		03EA43445DBE430825171A02 /* Pods_AdminX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67546FCF53970299E5DC8B7 /* Pods_AdminX.framework */; };
 		772EDCAB2336A474002DB0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDCAA2336A474002DB0CC /* AppDelegate.swift */; };
-		772EDCAD2336A474002DB0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDCAC2336A474002DB0CC /* ViewController.swift */; };
 		772EDCB02336A474002DB0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCAE2336A474002DB0CC /* Main.storyboard */; };
 		772EDCB22336A475002DB0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB12336A475002DB0CC /* Assets.xcassets */; };
 		772EDCB52336A475002DB0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB32336A475002DB0CC /* LaunchScreen.storyboard */; };
+		77A7C6352336A7E3004C81B3 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */; };
+		77A7C6372336A889004C81B3 /* roboto.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77A7C6362336A889004C81B3 /* roboto.regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +21,12 @@
 		61FB304F5B654726646CAAE7 /* Pods-AdminX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdminX.debug.xcconfig"; path = "Target Support Files/Pods-AdminX/Pods-AdminX.debug.xcconfig"; sourceTree = "<group>"; };
 		772EDCA72336A474002DB0CC /* AdminX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdminX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772EDCAA2336A474002DB0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		772EDCAC2336A474002DB0CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		772EDCAF2336A474002DB0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		772EDCB12336A475002DB0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		772EDCB42336A475002DB0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		772EDCB62336A475002DB0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
+		77A7C6362336A889004C81B3 /* roboto.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.regular.ttf; sourceTree = "<group>"; };
 		A67546FCF53970299E5DC8B7 /* Pods_AdminX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdminX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,7 +56,6 @@
 				61FB304F5B654726646CAAE7 /* Pods-AdminX.debug.xcconfig */,
 				59464C1E781D50E120F398CE /* Pods-AdminX.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,13 +81,22 @@
 			isa = PBXGroup;
 			children = (
 				772EDCAA2336A474002DB0CC /* AppDelegate.swift */,
-				772EDCAC2336A474002DB0CC /* ViewController.swift */,
 				772EDCAE2336A474002DB0CC /* Main.storyboard */,
+				77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */,
 				772EDCB12336A475002DB0CC /* Assets.xcassets */,
 				772EDCB32336A475002DB0CC /* LaunchScreen.storyboard */,
+				77A7C6392336A894004C81B3 /* Fonts */,
 				772EDCB62336A475002DB0CC /* Info.plist */,
 			);
 			path = AdminX;
+			sourceTree = "<group>";
+		};
+		77A7C6392336A894004C81B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				77A7C6362336A889004C81B3 /* roboto.regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +162,7 @@
 				772EDCB52336A475002DB0CC /* LaunchScreen.storyboard in Resources */,
 				772EDCB22336A475002DB0CC /* Assets.xcassets in Resources */,
 				772EDCB02336A474002DB0CC /* Main.storyboard in Resources */,
+				77A7C6372336A889004C81B3 /* roboto.regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,8 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				772EDCAD2336A474002DB0CC /* ViewController.swift in Sources */,
 				772EDCAB2336A474002DB0CC /* AppDelegate.swift in Sources */,
+				77A7C6352336A7E3004C81B3 /* loginPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
