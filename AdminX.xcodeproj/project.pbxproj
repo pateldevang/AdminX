@@ -13,6 +13,9 @@
 		772EDCB02336A474002DB0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCAE2336A474002DB0CC /* Main.storyboard */; };
 		772EDCB22336A475002DB0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB12336A475002DB0CC /* Assets.xcassets */; };
 		772EDCB52336A475002DB0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB32336A475002DB0CC /* LaunchScreen.storyboard */; };
+		779616AC233746C800DE1971 /* logViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779616AB233746C800DE1971 /* logViewController.swift */; };
+		779616AE2337485600DE1971 /* disableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779616AD2337485600DE1971 /* disableViewController.swift */; };
+		779616B023374E7600DE1971 /* disableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779616AF23374E7600DE1971 /* disableCellTableViewCell.swift */; };
 		77A7C6352336A7E3004C81B3 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */; };
 		77A7C6372336A889004C81B3 /* roboto.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77A7C6362336A889004C81B3 /* roboto.regular.ttf */; };
 		77CE7E802337295D0085F542 /* userTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */; };
@@ -31,6 +34,9 @@
 		772EDCB12336A475002DB0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		772EDCB42336A475002DB0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		772EDCB62336A475002DB0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779616AB233746C800DE1971 /* logViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logViewController.swift; sourceTree = "<group>"; };
+		779616AD2337485600DE1971 /* disableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disableViewController.swift; sourceTree = "<group>"; };
+		779616AF23374E7600DE1971 /* disableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disableCellTableViewCell.swift; sourceTree = "<group>"; };
 		77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
 		77A7C6362336A889004C81B3 /* roboto.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.regular.ttf; sourceTree = "<group>"; };
 		77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userTabBarViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,15 @@
 			path = AdminX;
 			sourceTree = "<group>";
 		};
+		779616B123374E7B00DE1971 /* disableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				779616AD2337485600DE1971 /* disableViewController.swift */,
+				779616AF23374E7600DE1971 /* disableCellTableViewCell.swift */,
+			);
+			path = disableViewControllers;
+			sourceTree = "<group>";
+		};
 		77A7C6392336A894004C81B3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +127,10 @@
 		77CE7E812337296B0085F542 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				779616B123374E7B00DE1971 /* disableViewControllers */,
 				77CE7E8723372A590085F542 /* userTapBarControllers */,
 				77CE7E8A2337369C0085F542 /* userDetailViewController.swift */,
+				779616AB233746C800DE1971 /* logViewController.swift */,
 				77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */,
 			);
 			path = Controllers;
@@ -277,7 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				77CE7E8923372DC30085F542 /* Constants.swift in Sources */,
+				779616AE2337485600DE1971 /* disableViewController.swift in Sources */,
+				779616AC233746C800DE1971 /* logViewController.swift in Sources */,
 				772EDCAB2336A474002DB0CC /* AppDelegate.swift in Sources */,
+				779616B023374E7600DE1971 /* disableCellTableViewCell.swift in Sources */,
 				77CE7E802337295D0085F542 /* userTabBarViewController.swift in Sources */,
 				77CE7E8623372A510085F542 /* userTabTableViewCell.swift in Sources */,
 				77CE7E8B2337369C0085F542 /* userDetailViewController.swift in Sources */,
@@ -435,7 +455,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = in.devangpatel.Asepsis;
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devangpatel.Paper-VIT2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = in.devangpatel.Asepsis;
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devangpatel.Paper-VIT2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,5 +1,5 @@
 //
-//  userDetailViewController.swift
+//  logViewController.swift
 //  AdminX
 //
 //  Created by Devang Patel on 22/09/19.
@@ -8,11 +8,15 @@
 
 import UIKit
 
-class userDetailViewController: UIViewController {
+class logViewController: UIViewController {
 
+    
+    //mARK: - Outlets
+    
+    @IBOutlet weak var log: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
 }
