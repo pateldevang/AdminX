@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03EA43445DBE430825171A02 /* Pods_AdminX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67546FCF53970299E5DC8B7 /* Pods_AdminX.framework */; };
+		770C03CB23373D24000C64ED /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 770C03CA23373D24000C64ED /* Montserrat-Medium.ttf */; };
 		772EDCAB2336A474002DB0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDCAA2336A474002DB0CC /* AppDelegate.swift */; };
 		772EDCB02336A474002DB0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCAE2336A474002DB0CC /* Main.storyboard */; };
 		772EDCB22336A475002DB0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB12336A475002DB0CC /* Assets.xcassets */; };
@@ -15,11 +16,15 @@
 		77A7C6352336A7E3004C81B3 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */; };
 		77A7C6372336A889004C81B3 /* roboto.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77A7C6362336A889004C81B3 /* roboto.regular.ttf */; };
 		77CE7E802337295D0085F542 /* userTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */; };
+		77CE7E8623372A510085F542 /* userTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE7E8523372A510085F542 /* userTabTableViewCell.swift */; };
+		77CE7E8923372DC30085F542 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE7E8823372DC30085F542 /* Constants.swift */; };
+		77CE7E8B2337369C0085F542 /* userDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE7E8A2337369C0085F542 /* userDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59464C1E781D50E120F398CE /* Pods-AdminX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdminX.release.xcconfig"; path = "Target Support Files/Pods-AdminX/Pods-AdminX.release.xcconfig"; sourceTree = "<group>"; };
 		61FB304F5B654726646CAAE7 /* Pods-AdminX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdminX.debug.xcconfig"; path = "Target Support Files/Pods-AdminX/Pods-AdminX.debug.xcconfig"; sourceTree = "<group>"; };
+		770C03CA23373D24000C64ED /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		772EDCA72336A474002DB0CC /* AdminX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdminX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772EDCAA2336A474002DB0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		772EDCAF2336A474002DB0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +34,9 @@
 		77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
 		77A7C6362336A889004C81B3 /* roboto.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.regular.ttf; sourceTree = "<group>"; };
 		77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userTabBarViewController.swift; sourceTree = "<group>"; };
+		77CE7E8523372A510085F542 /* userTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userTabTableViewCell.swift; sourceTree = "<group>"; };
+		77CE7E8823372DC30085F542 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		77CE7E8A2337369C0085F542 /* userDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDetailViewController.swift; sourceTree = "<group>"; };
 		A67546FCF53970299E5DC8B7 /* Pods_AdminX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdminX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +103,7 @@
 		77A7C6392336A894004C81B3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				770C03CA23373D24000C64ED /* Montserrat-Medium.ttf */,
 				77A7C6362336A889004C81B3 /* roboto.regular.ttf */,
 			);
 			path = Fonts;
@@ -103,8 +112,9 @@
 		77CE7E812337296B0085F542 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77CE7E8723372A590085F542 /* userTapBarControllers */,
+				77CE7E8A2337369C0085F542 /* userDetailViewController.swift */,
 				77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */,
-				77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -122,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				772EDCAA2336A474002DB0CC /* AppDelegate.swift */,
+				77CE7E8823372DC30085F542 /* Constants.swift */,
 				772EDCB12336A475002DB0CC /* Assets.xcassets */,
 			);
 			path = Helpers;
@@ -132,6 +143,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		77CE7E8723372A590085F542 /* userTapBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77CE7E8523372A510085F542 /* userTabTableViewCell.swift */,
+				77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */,
+			);
+			path = userTapBarControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				772EDCB52336A475002DB0CC /* LaunchScreen.storyboard in Resources */,
+				770C03CB23373D24000C64ED /* Montserrat-Medium.ttf in Resources */,
 				772EDCB22336A475002DB0CC /* Assets.xcassets in Resources */,
 				772EDCB02336A474002DB0CC /* Main.storyboard in Resources */,
 				77A7C6372336A889004C81B3 /* roboto.regular.ttf in Resources */,
@@ -255,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CE7E8923372DC30085F542 /* Constants.swift in Sources */,
 				772EDCAB2336A474002DB0CC /* AppDelegate.swift in Sources */,
 				77CE7E802337295D0085F542 /* userTabBarViewController.swift in Sources */,
+				77CE7E8623372A510085F542 /* userTabTableViewCell.swift in Sources */,
+				77CE7E8B2337369C0085F542 /* userDetailViewController.swift in Sources */,
 				77A7C6352336A7E3004C81B3 /* loginPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
