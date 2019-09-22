@@ -14,6 +14,7 @@
 		772EDCB52336A475002DB0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB32336A475002DB0CC /* LaunchScreen.storyboard */; };
 		77A7C6352336A7E3004C81B3 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */; };
 		77A7C6372336A889004C81B3 /* roboto.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77A7C6362336A889004C81B3 /* roboto.regular.ttf */; };
+		77CE7E802337295D0085F542 /* userTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		772EDCB62336A475002DB0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
 		77A7C6362336A889004C81B3 /* roboto.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.regular.ttf; sourceTree = "<group>"; };
+		77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userTabBarViewController.swift; sourceTree = "<group>"; };
 		A67546FCF53970299E5DC8B7 /* Pods_AdminX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdminX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,11 +82,10 @@
 		772EDCA92336A474002DB0CC /* AdminX */ = {
 			isa = PBXGroup;
 			children = (
-				772EDCAA2336A474002DB0CC /* AppDelegate.swift */,
-				772EDCAE2336A474002DB0CC /* Main.storyboard */,
-				77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */,
-				772EDCB12336A475002DB0CC /* Assets.xcassets */,
-				772EDCB32336A475002DB0CC /* LaunchScreen.storyboard */,
+				77CE7E842337298D0085F542 /* Model */,
+				77CE7E82233729720085F542 /* Views */,
+				77CE7E812337296B0085F542 /* Controllers */,
+				77CE7E832337297F0085F542 /* Helpers */,
 				77A7C6392336A894004C81B3 /* Fonts */,
 				772EDCB62336A475002DB0CC /* Info.plist */,
 			);
@@ -97,6 +98,40 @@
 				77A7C6362336A889004C81B3 /* roboto.regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		77CE7E812337296B0085F542 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77A7C6342336A7E3004C81B3 /* loginPageViewController.swift */,
+				77CE7E7F2337295D0085F542 /* userTabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		77CE7E82233729720085F542 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				772EDCAE2336A474002DB0CC /* Main.storyboard */,
+				772EDCB32336A475002DB0CC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77CE7E832337297F0085F542 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				772EDCAA2336A474002DB0CC /* AppDelegate.swift */,
+				772EDCB12336A475002DB0CC /* Assets.xcassets */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		77CE7E842337298D0085F542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				772EDCAB2336A474002DB0CC /* AppDelegate.swift in Sources */,
+				77CE7E802337295D0085F542 /* userTabBarViewController.swift in Sources */,
 				77A7C6352336A7E3004C81B3 /* loginPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
