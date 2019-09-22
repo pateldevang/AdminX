@@ -8,16 +8,41 @@
 
 import UIKit
 import Alamofire
-
+import SwiftyJSON
+var arr:[String] = []
 class deleteViewController: UIViewController {
 
     @IBOutlet weak var table: UITableView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.tableFooterView = UIView()
+                let headers: HTTPHeaders = ["Authorization":"Bearer qwertyuiop"]
         
-        
+        Alamofire.request(url+"auth/controllers/getAllUsers", method: .post,headers: headers).responseJSON { (response) in
+            
+            if (response.result.isSuccess) {
+                let json = JSON(response.result.value!)
+//                                print(json)
+             
+                var number = 0
+
+                while (number < json["payload"]["msg"].count) {
+                    arr.append(json["payload"]["msg"][number].stringValue)
+                    print(arr)
+//                    print(json["payload"]["msg"])
+                    number += 1
+                }
+                self.table.reloadData()
+                
+            }
+            else if(response.error != nil) {
+                print(response.error)
+            }
+            
+        }
         
         
 //        let login = [["name":"sarthak"]]
@@ -28,6 +53,11 @@ class deleteViewController: UIViewController {
 //        Alamofire.request(url+"auth/controllers/deleteUser",method: .post,parameters: parameters,encoding: JSONEncoding.default,headers: headers).responseJSON { response in
 //            debugPrint(response)
 //        }
+        
+        
+        
+        
+        
 
     }
    
@@ -41,18 +71,18 @@ extension deleteViewController: UITableViewDataSource,UITableViewDelegate {
     
     //MARK: - Table View datasource Method
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return arr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! deleteCellTableViewCell
-        cell.name.text = users[indexPath.row]
+        cell.name.text = arr[indexPath.row]
         return cell
     }
     
     // Setting custom row height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 50
     }
     
     
@@ -85,6 +115,15 @@ extension deleteViewController: UITableViewDataSource,UITableViewDelegate {
             let deleteRowAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Delete", handler:{action, indexpath in
                 self.table.isEditing = false
             })
+                let login = ["name":arr[indexPath.row]]
+                let headers: HTTPHeaders = ["Authorization":"Bearer qwertyuiop"]
+        
+                Alamofire.request(url+"auth/controllers/deleteUser",method: .post,parameters: login,encoding: JSONEncoding.default,headers: headers).responseJSON { response in
+                    debugPrint(response)
+                    arr.remove(at: indexPath.row)
+                    self.table.reloadData()
+                }
+        
             return [deleteRowAction]
         
         

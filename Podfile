@@ -7,5 +7,6 @@ target 'AdminX' do
 
   # Pods for AdminX
 	pod 'Alamofire'
+	pod 'SwiftyJSON'
 
 end
