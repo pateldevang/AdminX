@@ -13,6 +13,8 @@
 		772EDCB02336A474002DB0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCAE2336A474002DB0CC /* Main.storyboard */; };
 		772EDCB22336A475002DB0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB12336A475002DB0CC /* Assets.xcassets */; };
 		772EDCB52336A475002DB0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772EDCB32336A475002DB0CC /* LaunchScreen.storyboard */; };
+		7759C34C2337681700CABCFC /* deleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759C34B2337681700CABCFC /* deleteViewController.swift */; };
+		7759C34F2337687D00CABCFC /* deleteCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759C34E2337687D00CABCFC /* deleteCellTableViewCell.swift */; };
 		779616AC233746C800DE1971 /* logViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779616AB233746C800DE1971 /* logViewController.swift */; };
 		779616AE2337485600DE1971 /* disableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779616AD2337485600DE1971 /* disableViewController.swift */; };
 		779616B023374E7600DE1971 /* disableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779616AF23374E7600DE1971 /* disableCellTableViewCell.swift */; };
@@ -34,6 +36,8 @@
 		772EDCB12336A475002DB0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		772EDCB42336A475002DB0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		772EDCB62336A475002DB0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7759C34B2337681700CABCFC /* deleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteViewController.swift; sourceTree = "<group>"; };
+		7759C34E2337687D00CABCFC /* deleteCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteCellTableViewCell.swift; sourceTree = "<group>"; };
 		779616AB233746C800DE1971 /* logViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logViewController.swift; sourceTree = "<group>"; };
 		779616AD2337485600DE1971 /* disableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disableViewController.swift; sourceTree = "<group>"; };
 		779616AF23374E7600DE1971 /* disableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disableCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 			path = AdminX;
 			sourceTree = "<group>";
 		};
+		7759C34D2337682400CABCFC /* deleteViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				7759C34E2337687D00CABCFC /* deleteCellTableViewCell.swift */,
+				7759C34B2337681700CABCFC /* deleteViewController.swift */,
+			);
+			path = deleteViewContollers;
+			sourceTree = "<group>";
+		};
 		779616B123374E7B00DE1971 /* disableViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +140,7 @@
 		77CE7E812337296B0085F542 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7759C34D2337682400CABCFC /* deleteViewContollers */,
 				779616B123374E7B00DE1971 /* disableViewControllers */,
 				77CE7E8723372A590085F542 /* userTapBarControllers */,
 				77CE7E8A2337369C0085F542 /* userDetailViewController.swift */,
@@ -298,6 +312,8 @@
 				779616AC233746C800DE1971 /* logViewController.swift in Sources */,
 				772EDCAB2336A474002DB0CC /* AppDelegate.swift in Sources */,
 				779616B023374E7600DE1971 /* disableCellTableViewCell.swift in Sources */,
+				7759C34F2337687D00CABCFC /* deleteCellTableViewCell.swift in Sources */,
+				7759C34C2337681700CABCFC /* deleteViewController.swift in Sources */,
 				77CE7E802337295D0085F542 /* userTabBarViewController.swift in Sources */,
 				77CE7E8623372A510085F542 /* userTabTableViewCell.swift in Sources */,
 				77CE7E8B2337369C0085F542 /* userDetailViewController.swift in Sources */,
